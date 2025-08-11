@@ -1,0 +1,23 @@
+{
+  "name": "daggerheart-art-pack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "author": "JoaquinP",
+  "license": "MIT",
+  "dependencies": {
+    "rollup": "^4.36.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": "https://github.com/joaquinpereyra98/daggerheart-art-pack/issues"
+  },
+  "homepage": "https://github.com/joaquinpereyra98/daggerheart-art-pack#readme",
+  "description": ""
+}
