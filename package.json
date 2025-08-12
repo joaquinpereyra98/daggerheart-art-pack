@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c && node ./combine-json.mjs"
   },
   "author": "JoaquinP",
   "license": "MIT",

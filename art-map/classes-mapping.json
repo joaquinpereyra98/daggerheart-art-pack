@@ -1,0 +1,40 @@
+{
+  "daggerheart.classes": {
+    "vegl3bFOq3pcFTWT": {
+      "__DOCUMENT_NAME__": "Bard",
+      "item": "icons/tools/instruments/harp-red.webp"
+    },
+    "ZNwUTCyGCEcidZFv": {
+      "__DOCUMENT_NAME__": "Druid",
+      "item": "icons/creatures/mammals/wolf-howl-moon-black.webp"
+    },
+    "nRAyoC0fOzXPDa4z": {
+      "__DOCUMENT_NAME__": "Guardian",
+      "item": "icons/equipment/shield/heater-wooden-sword-green.webp"
+    },
+    "BTyfve69LKqoOi9S": {
+      "__DOCUMENT_NAME__": "Ranger",
+      "item": "icons/weapons/bows/shortbow-recurve-yellow-blue.webp"
+    },
+    "CvHlkHZfpMiCz5uT": {
+      "__DOCUMENT_NAME__": "Rogue",
+      "item": "icons/magic/defensive/shield-barrier-blades-teal.webp"
+    },
+    "5ZnlJ5bEoyOTkUJv": {
+      "__DOCUMENT_NAME__": "Seraph",
+      "item": "icons/magic/holy/barrier-shield-winged-cross.webp"
+    },
+    "DchOzHcWIJE9FKcR": {
+      "__DOCUMENT_NAME__": "Sorcerer",
+      "item": "icons/magic/symbols/rune-sigil-horned-white-purple.webp"
+    },
+    "xCUWwJz4WSthvLfy": {
+      "__DOCUMENT_NAME__": "Warrior",
+      "item": "icons/weapons/swords/sword-broad-crystal-paired.webp"
+    },
+    "5LwX4m8ziY3F1ZGC": {
+      "__DOCUMENT_NAME__": "Wizard",
+      "item": "icons/magic/symbols/circled-gem-pink.webp"
+    }
+  }
+}

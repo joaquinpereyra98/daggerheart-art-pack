@@ -1,0 +1,76 @@
+{
+  "daggerheart.subclasses": {
+    "TIUsIlTS1WkK5vr2": {
+      "__DOCUMENT_NAME__": "Beastbound",
+      "item": "icons/creatures/mammals/elk-moose-marked-green.webp"
+    },
+    "NAFU9roaVG7f3RNJ": {
+      "__DOCUMENT_NAME__": "Call Of The Brave",
+      "item": "icons/magic/life/heart-cross-strong-flame-purple-orange.webp"
+    },
+    "bcNe5qP3o6CKadhK": {
+      "__DOCUMENT_NAME__": "Call Of The Slayer",
+      "item": "icons/skills/melee/weapons-crossed-swords-yellow.webp"
+    },
+    "M5mpGoAj8LRkylrY": {
+      "__DOCUMENT_NAME__": "Divine Wielder",
+      "item": "icons/weapons/swords/sword-gold-holy.webp"
+    },
+    "wg1H0hROc2acHwZh": {
+      "__DOCUMENT_NAME__": "Elemental Origin",
+      "item": "icons/magic/water/orb-water-ice-pink.webp"
+    },
+    "h161OSIK24Up4qNd": {
+      "__DOCUMENT_NAME__": "Nightwalker",
+      "item": "icons/magic/control/buff-flight-wings-blue.webp"
+    },
+    "GLpRVxnY5E82khxH": {
+      "__DOCUMENT_NAME__": "Primal Origin",
+      "item": "icons/magic/fire/flame-burning-hand-purple.webp"
+    },
+    "qqQlgCqhOivUFoQn": {
+      "__DOCUMENT_NAME__": "School Of Knowledge",
+      "item": "icons/sundries/books/book-tooled-blue-yellow.webp"
+    },
+    "4y9Ph7RsCIAbkwTk": {
+      "__DOCUMENT_NAME__": "School Of War",
+      "item": "icons/magic/fire/dagger-rune-enchant-flame-strong-blue.webp"
+    },
+    "rKRxFBlkbh9cDK8K": {
+      "__DOCUMENT_NAME__": "Stalwart",
+      "item": "icons/magic/holy/barrier-shield-winged-blue.webp"
+    },
+    "95QxNZwgyEm1LqdG": {
+      "__DOCUMENT_NAME__": "Syndicate",
+      "item": "icons/environment/settlement/city-hall.webp"
+    },
+    "ld8MIvk0xVJydSBz": {
+      "__DOCUMENT_NAME__": "Troubadour",
+      "item": "icons/tools/instruments/harp-gold-glowing.webp"
+    },
+    "SUo8NPBPO8aN193u": {
+      "__DOCUMENT_NAME__": "Vengeance",
+      "item": "icons/magic/unholy/silhouette-evil-horned-giant.webp"
+    },
+    "xp0XMjYT85Q7E90o": {
+      "__DOCUMENT_NAME__": "Warden of Renewal",
+      "item": "icons/magic/nature/leaf-juggle-humanoid-green.webp"
+    },
+    "W9hs5kxOWeY7eA4Q": {
+      "__DOCUMENT_NAME__": "Warden of the Elements",
+      "item": "icons/magic/nature/root-vines-face-glow-green.webp"
+    },
+    "zsUglcU4NgZ8tNgZ": {
+      "__DOCUMENT_NAME__": "Wayfinder",
+      "item": "icons/environment/wilderness/mine-interior-dungeon-door.webp"
+    },
+    "y7ERWRIpJsdP9Re4": {
+      "__DOCUMENT_NAME__": "Winged Sentinel",
+      "item": "icons/magic/holy/angel-winged-humanoid-blue.webp"
+    },
+    "XTSODVM8st75Os8M": {
+      "__DOCUMENT_NAME__": "Wordsmith",
+      "item": "icons/tools/scribal/ink-quill-red.webp"
+    }
+  }
+}

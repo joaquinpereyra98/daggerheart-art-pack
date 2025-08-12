@@ -1,0 +1,520 @@
+{
+  "daggerheart.adversaries": {
+    "89yAh30vaNQOALlz": {
+      "__DOCUMENT_NAME__": "Acid Burrower",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "G7jiltRjgvVhZewm": {
+      "__DOCUMENT_NAME__": "Adult Flickerfly",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "vNIbYQ4YSzNf0WPE": {
+      "__DOCUMENT_NAME__": "Apprentice Assassin",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "JRhrrEg5UroURiAD": {
+      "__DOCUMENT_NAME__": "Archer Guard",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "0ts6CGd93lLqGZI5": {
+      "__DOCUMENT_NAME__": "Archer Squadron",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "WPEOIGfclNJxWb87": {
+      "__DOCUMENT_NAME__": "Arch-Necromancer",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "h5RuhzGL17dW5FBT": {
+      "__DOCUMENT_NAME__": "Assassin Poisoner",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "dgH3fW9FTYLaIDvS": {
+      "__DOCUMENT_NAME__": "Battle Box",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "71qKDLKO3CsrNkdy": {
+      "__DOCUMENT_NAME__": "Bear",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "B4LZcGuBAHzyVdzy": {
+      "__DOCUMENT_NAME__": "Bladed Guard",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "2UeZ0tEe7AzgSJNd": {
+      "__DOCUMENT_NAME__": "Brawny Zombie",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "8Zkqk1jU09nKL2fy": {
+      "__DOCUMENT_NAME__": "Cave Ogre",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "jDmHqGvzg5wjgmxE": {
+      "__DOCUMENT_NAME__": "Chaos Skull",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "99TqczuQipBmaB8i": {
+      "__DOCUMENT_NAME__": "Conscript",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "uOP5oT9QzXPlnf3p": {
+      "__DOCUMENT_NAME__": "Construct",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "ZxWaWPdzFIUPNC62": {
+      "__DOCUMENT_NAME__": "Courtesan",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "CBBuEXAlLKFMJdjg": {
+      "__DOCUMENT_NAME__": "Courtier",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "0NxCSugvKQ4W8OYZ": {
+      "__DOCUMENT_NAME__": "Cult Adept",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "tyBOpLfigAhI9bU3": {
+      "__DOCUMENT_NAME__": "Cult Fang",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "zx99sOGTXicP4SSD": {
+      "__DOCUMENT_NAME__": "Cult Initiate",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "9x2xY9zwc3xzbXo5": {
+      "__DOCUMENT_NAME__": "Deeproot Defender",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "NoRZ1PqB8N5wcIw0": {
+      "__DOCUMENT_NAME__": "Demonic Hound Pack",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "pnyjIGxxvurcWmTv": {
+      "__DOCUMENT_NAME__": "Demon of Avarice",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "kE4dfhqmIQpNd44e": {
+      "__DOCUMENT_NAME__": "Demon of Despair",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "2VN3BftageoTTIzu": {
+      "__DOCUMENT_NAME__": "Demon of Hubris",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "SxSOkM4bcVOFyjbo": {
+      "__DOCUMENT_NAME__": "Demon of Jealousy",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "5lphJAgzoqZI3VoG": {
+      "__DOCUMENT_NAME__": "Demon of Wrath",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "tBWHW00epmMnkawe": {
+      "__DOCUMENT_NAME__": "Dire Bat",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "wNzeuQLfLUMvgHlQ": {
+      "__DOCUMENT_NAME__": "Dire Wolf",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "wR7cFKrHvRzbzhBT": {
+      "__DOCUMENT_NAME__": "Dryad",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "TLzY1nDw0Bu9Ud40": {
+      "__DOCUMENT_NAME__": "Electric Eels",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "P7h54ZePFPHpYwvB": {
+      "__DOCUMENT_NAME__": "Elemental Spark",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "bfhVWMBUh61b9J6n": {
+      "__DOCUMENT_NAME__": "Elite Soldier",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "ChwwVqowFw8hJQwT": {
+      "__DOCUMENT_NAME__": "Failed Experiment",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "OsLG2BjaEdTZUJU9": {
+      "__DOCUMENT_NAME__": "Fallen Shock Troop",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "PELRry1vqjBzSAlr": {
+      "__DOCUMENT_NAME__": "Fallen Sorcerer",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "hxZ0sgoFJubh5aj6": {
+      "__DOCUMENT_NAME__": "Fallen Warlord: Realm Breaker",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "RXkZTwBRi4dJ3JE5": {
+      "__DOCUMENT_NAME__": "Fallen Warlord: Undefeated Champion",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "8VZIgU12cB3cvlyH": {
+      "__DOCUMENT_NAME__": "Giant Beastmaster",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "YnObCleGjPT7yqEc": {
+      "__DOCUMENT_NAME__": "Giant Brawler",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "OMQ0v6PE8s1mSU0K": {
+      "__DOCUMENT_NAME__": "Giant Eagle",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "IIWV4ysJPFPnTP7W": {
+      "__DOCUMENT_NAME__": "Giant Mosquitoes",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "4PfLnaCrOcMdb4dK": {
+      "__DOCUMENT_NAME__": "Giant Rat",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "5s8wSvpyC5rxY5aD": {
+      "__DOCUMENT_NAME__": "Giant Recruit",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "fmfntuJ8mHRCAktP": {
+      "__DOCUMENT_NAME__": "Giant Scorpion",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "8KWVLWXFhlY2kYx0": {
+      "__DOCUMENT_NAME__": "Glass Snake",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "8mJYMpbLTb8qIOrr": {
+      "__DOCUMENT_NAME__": "Gorgon",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "dsfB3YhoL5SudvS2": {
+      "__DOCUMENT_NAME__": "Greater Earth Elemental",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "xIICT6tEdnA7dKDV": {
+      "__DOCUMENT_NAME__": "Greater Water Elemental",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "SHXedd9zZPVfUgUa": {
+      "__DOCUMENT_NAME__": "Green Ooze",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "kabueAo6BALApWqp": {
+      "__DOCUMENT_NAME__": "Hallowed Archer",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "VENwg7xEFcYObjmT": {
+      "__DOCUMENT_NAME__": "Hallowed Soldier",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "uRtghKE9mHlII4rs": {
+      "__DOCUMENT_NAME__": "Harrier",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "mK3A5FTx6k8iPU3F": {
+      "__DOCUMENT_NAME__": "Head Guard",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "i2UNbRvgyoSs07M6": {
+      "__DOCUMENT_NAME__": "Head Vampire",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "r1mbfSSwKWdcFdAU": {
+      "__DOCUMENT_NAME__": "High Seraph",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "6hbqmxDXFOzZJDk4": {
+      "__DOCUMENT_NAME__": "Huge Green Ooze",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "MI126iMOOobQ1Obn": {
+      "__DOCUMENT_NAME__": "Hydra",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "5Lh1T0zaT8Pkr2U2": {
+      "__DOCUMENT_NAME__": "Jagged Knife Bandit",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "MbBPIOxaxXYNApXz": {
+      "__DOCUMENT_NAME__": "Jagged Knife Hexer",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "CBKixLH3yhivZZuL": {
+      "__DOCUMENT_NAME__": "Jagged Knife Kneebreaker",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "C0OMQqV7pN6t7ouR": {
+      "__DOCUMENT_NAME__": "Jagged Knife Lackey",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "aTljstqteGoLpCBq": {
+      "__DOCUMENT_NAME__": "Jagged Knife Lieutenant",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "XF4tYTq9nPJAy2ox": {
+      "__DOCUMENT_NAME__": "Jagged Knife Shadow",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "1zuyof1XuIfi3aMG": {
+      "__DOCUMENT_NAME__": "Jagged Knife Sniper",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "MYXmTx2FHcIjdfYZ": {
+      "__DOCUMENT_NAME__": "Juvenile Flickerfly",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "7ai2opemrclQe3VF": {
+      "__DOCUMENT_NAME__": "Knight of the Realm",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "4nqv3ZwJGjnmic8j": {
+      "__DOCUMENT_NAME__": "Kraken",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "niBpVU7yeo5ccskE": {
+      "__DOCUMENT_NAME__": "Masked Thief",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "dNta0cUzr96xcFhf": {
+      "__DOCUMENT_NAME__": "Master Assassin",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "Al3w2CgjfdT3p9ma": {
+      "__DOCUMENT_NAME__": "Merchant",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "Vy02IhGhkJLuezu4": {
+      "__DOCUMENT_NAME__": "Merchant Baron",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "sRn4bqerfARvhgSV": {
+      "__DOCUMENT_NAME__": "Minor Chaos Elemental",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "3tqCjDwJAQ7JKqMb": {
+      "__DOCUMENT_NAME__": "Minor Demon",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "DscWkNVoHak6P4hh": {
+      "__DOCUMENT_NAME__": "Minor Fire Elemental",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "G62k4oSkhkoXEs2D": {
+      "__DOCUMENT_NAME__": "Minor Treant",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "rM9qCIYeWg9I0B4l": {
+      "__DOCUMENT_NAME__": "Minotaur Wrecker",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "yx0vK2yfNVZKWUUi": {
+      "__DOCUMENT_NAME__": "Monarch",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "mVV7a7KQAORoPMgZ": {
+      "__DOCUMENT_NAME__": "Mortal Hunter",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "XK78QUfY8c8Go8Uv": {
+      "__DOCUMENT_NAME__": "Oak Treant",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "befIqd5IYKg6eUz2": {
+      "__DOCUMENT_NAME__": "Oracle of Doom",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "A0SeeDzwjvqOsyof": {
+      "__DOCUMENT_NAME__": "Outer Realms Abomination",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "ms6nuOl3NFkhPj1k": {
+      "__DOCUMENT_NAME__": "Outer Realms Corrupter",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "moJhHgKqTKPS2WYS": {
+      "__DOCUMENT_NAME__": "Outer Realms Thrall",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "EQTOAOUrkIvS2z88": {
+      "__DOCUMENT_NAME__": "Patchwork Zombie Hulk",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "CP6iRfHdyFWniTHY": {
+      "__DOCUMENT_NAME__": "Perfected Zombie",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "wycLpvebWdUqRhpP": {
+      "__DOCUMENT_NAME__": "Petty Noble",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "OROJbjsqagVh7ECV": {
+      "__DOCUMENT_NAME__": "Pirate Captain",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "5YgEajn0wa4i85kC": {
+      "__DOCUMENT_NAME__": "Pirate Raiders",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "mhcVkVFrzIJ18FDm": {
+      "__DOCUMENT_NAME__": "Pirate Tough",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "9rVlbJVrDNn1x7PS": {
+      "__DOCUMENT_NAME__": "Red Ooze",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "gP3fWTLzSFnpA8EJ": {
+      "__DOCUMENT_NAME__": "Rotted Zombie",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "EtLJiTsilPPZvLUX": {
+      "__DOCUMENT_NAME__": "Royal Advisor",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "sLAccjvCWfeedbpI": {
+      "__DOCUMENT_NAME__": "Secret-Keeper",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "bgreCaQ6ap2DVpCr": {
+      "__DOCUMENT_NAME__": "Sellsword",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "2nXz4ilAY4xuhKLm": {
+      "__DOCUMENT_NAME__": "Shambling Zombie",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "YmVAkdNsyuXWTtYp": {
+      "__DOCUMENT_NAME__": "Shark",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "BK4jwyXSRx7IOQiO": {
+      "__DOCUMENT_NAME__": "Siren",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "7X5q7a6ueeHs5oA9": {
+      "__DOCUMENT_NAME__": "Skeleton Archer",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "6l1a3Fazq8BoKIcc": {
+      "__DOCUMENT_NAME__": "Skeleton Dredge",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "Q9LaVTyXF9NF12C7": {
+      "__DOCUMENT_NAME__": "Skeleton Knight",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "10YIQl0lvCJXZLfX": {
+      "__DOCUMENT_NAME__": "Skeleton Warrior",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "5tCkhnBByUIN5UdG": {
+      "__DOCUMENT_NAME__": "Spectral Archer",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "65cSO3EQEh6ZH6Xk": {
+      "__DOCUMENT_NAME__": "Spectral Captain",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "UFVGl1osOsJTneLf": {
+      "__DOCUMENT_NAME__": "Spectral Guardian",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "ldbWEL7uZs84vyrR": {
+      "__DOCUMENT_NAME__": "Spellblade",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "8zlynOhnVA59KpKT": {
+      "__DOCUMENT_NAME__": "Spy",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "KGVwnLq85ywP9xvB": {
+      "__DOCUMENT_NAME__": "Stag Knight",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "3aAS2Qm3R6cgaYfE": {
+      "__DOCUMENT_NAME__": "Stonewraith",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "qNgs3AbLyJrY19nt": {
+      "__DOCUMENT_NAME__": "Swarm of Rats",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "VtFBt9XBE0WrGGxP": {
+      "__DOCUMENT_NAME__": "Sylvan Soldier",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "PKSXFuaIHUCoH63A": {
+      "__DOCUMENT_NAME__": "Tangle Bramble Swarm",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "XcAGOSmtCFLT1unN": {
+      "__DOCUMENT_NAME__": "Tangle Bramble",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "aLkLFuVoKz2NLoBK": {
+      "__DOCUMENT_NAME__": "Tiny Green Ooze",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "1fkLQXVtmILqfJ44": {
+      "__DOCUMENT_NAME__": "Tiny Red Ooze",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "o63nS0k3wHu6EgKP": {
+      "__DOCUMENT_NAME__": "Treant Sapling",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "WWyUp6Mxl1S3KYUG": {
+      "__DOCUMENT_NAME__": "Vampire",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "JqYraOqNmmhHk4Yy": {
+      "__DOCUMENT_NAME__": "Vault Guardian Gaoler",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "FVgYb28fhxlVcGwA": {
+      "__DOCUMENT_NAME__": "Vault Guardian Sentinel",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "c5hGdvY5UnSjlHws": {
+      "__DOCUMENT_NAME__": "Vault Guardian Turret",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "pMuXGCSOQaxpi5tb": {
+      "__DOCUMENT_NAME__": "Volcanic Dragon: Ashen Tyrant",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "eArAPuB38CNR0ZIM": {
+      "__DOCUMENT_NAME__": "Volcanic Dragon: Molten Scourge",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "ladm7wykhZczYzrQ": {
+      "__DOCUMENT_NAME__": "Volcanic Dragon: Obsidian Predator",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "noDdT0tsN6FXSmC8": {
+      "__DOCUMENT_NAME__": "War Wizard",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "ZNbQ2jg35LG4t9eH": {
+      "__DOCUMENT_NAME__": "Weaponmaster",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "8yUj2Mzvnifhxegm": {
+      "__DOCUMENT_NAME__": "Young Dryad",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "UGPiPLJsPvMTSKEF": {
+      "__DOCUMENT_NAME__": "Young Ice Dragon",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "YhJrP7rTBiRdX5Fp": {
+      "__DOCUMENT_NAME__": "Zombie Legion",
+      "item": "icons/svg/mystery-man.svg"
+    },
+    "Nf0v43rtflV56V2T": {
+      "__DOCUMENT_NAME__": "Zombie Pack",
+      "item": "icons/svg/mystery-man.svg"
+    }
+  }
+}
