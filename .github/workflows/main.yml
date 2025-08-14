@@ -51,7 +51,8 @@ jobs:
               LICENSE \
               daggerheart-art-pack.mjs \
               core-mapping.json \
-              templates/
+              templates/ \
+              storage \
 
       - name: Update Release With Files
         id: create_version_release
