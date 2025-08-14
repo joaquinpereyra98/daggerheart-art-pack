@@ -10,6 +10,7 @@
   "exclude": ["node_modules", "**/node_modules/*"],
   "include": [
     "daggerheart-art-pack.mjs",
+    "module",
     "foundry/client/client.mjs",
     "main.d.ts"
   ],

@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c && node ./combine-json.mjs"
+    "create-symlink" : "node tools/create-symlink.mjs",
+    "create-mapping": "node tools/create-mapping.mjs",
+    "reset-storage": "node tools/reset-storage.mjs",
+    "build": "rollup -c"
   },
   "author": "JoaquinP",
   "license": "MIT",

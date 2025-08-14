@@ -36,5 +36,6 @@
         "mapping": "modules/daggerheart-art-pack/core-mapping.json"
       }
     }
-  }
+  },
+  "persistentStorage": true
 }

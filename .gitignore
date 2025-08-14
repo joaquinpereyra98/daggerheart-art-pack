@@ -1,4 +1,5 @@
 node_modules/
 foundry
-tools/
+core-mapping.json
 public
+storage
