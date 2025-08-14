@@ -45,6 +45,7 @@ jobs:
 
       - name: Create System Archive
         run: |
+          npm run reset-storage --if-present
           zip --recurse-paths ./module.zip \
               module.json \
               README.md \
