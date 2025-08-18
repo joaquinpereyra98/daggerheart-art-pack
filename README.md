@@ -3,14 +3,23 @@ Daggerheart Art Pack is a module designed to simplify the implementation of Art 
 With this module, you can customize the images for actors and items in the system’s compendiums.
 
 ## How use it
-The module uses a simple folder structure to manage your images. When you place images in the correct folders, they will automatically populate the corresponding compendium.
+To use this module, simply go to Configure Settings and scroll down to the "daggerheart-art-pack" section. There, you’ll find a single button called Art Mapping Config, which opens the window to set up the Compendium Art for documents within the compendiums.
 
-### Folder Structure
-```
-storage/portraits/... → for actor or item portraits
-storage/tokens/...  → for actor tokens
-```
-Each folder already contains subfolders named as the compendiums; place your images inside the appropriate one.
+<img width="479" height="671" alt="image" src="https://github.com/user-attachments/assets/ff2230b3-d397-45e3-89b2-fbed3087e0c0" />
+
+The interface is divided into two main categories:
+- Actors: That includes the Adversaries and Environments compenidums.
+-Items: Includes the Ancestries, Armors, Beastforms, Classes, Communities, Consumables, Domains, Loot, Subclasses, and Weapons compendiums.
+
+Each category includes a field that allows you to manually load a new item from the compendium, configure it manually.
+
+At the bottom of the window, there are three main buttons:
+- Reset – Restores the default settings.
+- Import Art – Imports all artwork from a Folder.
+- Save Changes – Saves your current configuration.
+
+### Import Art from Folder
+The second button, Import Art, allows the user to select a folder containing artwork and automatically maps each piece to its corresponding document.
 
 ### Naming Your Files
 For the module to recognize your images, the file names must follow a slugified version of the document name:
@@ -21,30 +30,11 @@ For the module to recognize your images, the file names must follow a slugified 
 #### Example
 If you want to replace the portrait or token of the actor *Acid Burrower*, your files could be:
 ```
-storage/
-├─ portraits/
-│  ├─ Adversaries/         <-- Subfolder for Adversaries portraits
-│  │  ├─ acid_burrower.png
-│  │  ├─ fire_mage.png
-│  └─ ...                    <-- Other compendium folders
-│
-└─ tokens/ 
-   ├─ Adversaries/      <-- Subfolder for Adversaries tokens
-   │  ├─ acid_burrower_token.png
-   │  ├─ acid_burrower_tk.png
-   │  └─ acid_burrowercircle.png
-   └─ ...                    <-- Other compendium folders
-
+acid_burrower_token.png
+acid_burrower_tk.png
+acid_burrowerCircle.png
 ```
 These will all be recognized and can populate the compendium automatically.
-
-### Step-by-Step Guide
-
- 1. Open the module folder and navigate to `storage/portraits` or `storage/tokens`.
- 2. Inside the folder, find the existing subfolder that matches the compendium name you want to populate.
- 3. Place your images in the subfolder.
- 4. Make sure each file name follows the **lowercase** + **underscores** rule.
- 5. Save your changes and open FoundryVTT. The images should now automatically appear in the compendium
 
 ## FAQ
 **Q: Do I need to create the subfolders myself?**
@@ -61,8 +51,11 @@ acid_burrower.png
 acid_burrower1.png
 acid_burrower_variant.png
 ```
+**Q: Can I add multiple tokens for the same actor?**
+A: Yes. You can use variations (wildcards), and all matching files will be automatically associated with the same document.
+
 **Q: Can I add multiple portraits for the same actor or item ?**
-A: No, variations(wildcards) are only possible for tokens.
+A: No. Variations (wildcards) are only supported for tokens, not portraits.
 
 **Q: What if my image doesn’t appear in the compendium?**
 A: Make sure:
@@ -70,14 +63,12 @@ A: Make sure:
 - The filename follows the slugified naming rules.
 - The image format is supported by FoundryVTT.
 
-**Q: Can I replace existing images without losing them?**
-A: Yes. You can overwrite existing files or add new ones. The module will automatically use any new images placed in the subfolders.
-
 **Q: Can I change the size of the token or the border?**
-Currently this is not possible but something I will think about for future additions.
+You can change the size of the token, but adjusting the border isn’t possible at the moment. This may be considered in a future update.
 
 ## Disclaimer
-Although the developer of this module is part of the Foundryborne team, the **Foundryborne team is NOT responsible** for the development or maintenance of this module.
-The Daggerborne team or the developer not are responsible for copyright infringement from user-added content.
-Foundry Virtual Tabletop © Copyright 2023, [Foundry Gaming](https://foundryvtt.com/), LLC. All rights reserved.
-Daggerheart ©  Critical Role LLC All rights reserved For more information please visit [DarrigtonPress Offical Website](https://darringtonpress.com/license/)
+- Although the developer of this module is part of the Foundryborne team, the **Foundryborne team is NOT responsible** for the development or maintenance of this module.
+- The Daggerborne team or the developer not are responsible for copyright infringement from user-added content.
+- Foundry Virtual Tabletop © Copyright 2023, [Foundry Gaming](https://foundryvtt.com/), LLC. All rights reserved.
+- Daggerheart ©  Critical Role LLC All rights reserved For more information please visit [DarrigtonPress Offical Website](https://darringtonpress.com/license/)
+
