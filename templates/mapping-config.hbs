@@ -1,0 +1,88 @@
+<div class="scrollable">
+  {{!-- Loop over top-level lists (Actors or Items) --}}
+  {{#each lists as |list listKey|}}
+  <div class="list-container">
+    <div class="list-header">{{list.name}}</div>
+
+    <ul class="item-list" data-list="{{listKey}}">
+      {{!-- Loop over packs inside the list --}}
+      {{#each list.packs as |pack|}}
+      <li class="pack-container accordion" data-accordion="{{pack.key}}">
+
+        {{!-- Pack accordion header --}}
+        <div class="accordion-header flexrow pack-header" data-action="toggleAccordion">
+          <span>{{pack.label}} <span class="hint"> ({{pack.index.length}})</span></span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+        {{!-- Pack accordion body --}}
+        <ul class="accordion-body doc-list">
+          <div class="wrapper">
+
+            <div class="flexrow input-header">
+              <select>
+                {{selectOptions pack.choices}}
+              </select>
+              <button type="button" class="icon fa-solid fa-add" data-pack="{{pack.key}}"
+                data-action="addActorPack"></button>
+            </div>
+            {{!-- Loop over docs inside the pack --}}
+            {{#each pack.index as |doc|}}
+            <li class="doc-container accordion" data-accordion="{{doc._id}}">
+              {{!-- Document accordion header --}}
+              <div class="accordion-header flexrow pack-header" data-action="toggleAccordion">
+                <img class="thumbnail" src="{{doc.img}}" alt="{{doc.name}}">
+                <span>{{doc.name}}</span>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+
+              {{!-- Document accordion body --}}
+              <div class="accordion-body">
+                <div class="wrapper">
+                  <div class="form-group">
+                    <label>Portrait</label>
+                    <div class="form-fields">
+                      <file-picker name="{{doc.path}}.portrait" type="image" value="{{doc.portrait}}"></file-picker>
+                    </div>
+                  </div>
+                  {{#if (eq pack.type "Actor")}}
+                  <fieldset>
+                    <legend>Token</legend>
+                    <div class="form-group">
+                      <label>{{localize "DOCUMENT.FIELDS.img.label"}}</label>
+                      <div class="form-fields">
+                        <file-picker name="{{doc.path}}.token.texture.src" type="image"
+                          value="{{doc.token.texture.src}}"></file-picker>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>{{localize "TOKEN.Dimensions"}} <span class="units">({{localize
+                          "GridSpaces"}})</span></label>
+                      <div class="form-fields">
+                        <label>{{localize "DOCUMENT.FIELDS.width.label"}}</label>
+                        {{numberInput doc.token.width name=(concat doc.path ".token.width")}}
+                        <label>{{localize "DOCUMENT.FIELDS.height.label"}}</label>
+                        {{numberInput doc.token.height name=(concat doc.path ".token.height")}}
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>Randomize Wildcard Images</label>
+                      <div class="form-fields">
+                        <input type="checkbox" name="{{doc.path}}.token.randomImg" {{checked doc.token.randomImg}}>
+                      </div>
+                    </div>
+                  </fieldset>
+                  {{/if}}
+                </div>
+              </div>
+            </li>
+            {{/each}}
+
+          </div>
+        </ul>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+  {{/each}}
+</div>

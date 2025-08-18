@@ -12,6 +12,11 @@ export function matchSlug(slug, filePath) {
   return slice === slug;
 }
 
+/**
+ * Get a list of valid file extensions for image and video files supported by Foundry.
+ * @function getValidExtensions
+ * @returns {string[]} An array of file extensions (including the leading dot).
+ */
 export function getValidExtensions() {
-  return [...Object.keys(CONST.IMAGE_FILE_EXTENSIONS), ...Object.keys(CONST.VIDEO_FILE_EXTENSIONS)].map(k => `.${k}`);
+  return Object.keys(CONST.IMAGE_FILE_EXTENSIONS).map(k => `.${k}`);
 }

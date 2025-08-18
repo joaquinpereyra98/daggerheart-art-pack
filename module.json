@@ -25,15 +25,15 @@
     "recommends": []
   },
   "esmodules": ["daggerheart-art-pack.mjs"],
-  "styles": [],
+  "styles": ["styles/daggerheart-art-pack.css"],
   "flags": {
     "hotReload": {
       "extensions": ["css", "hbs"],
-      "paths": ["styles", "templates/"]
+      "paths": ["styles", "templates"]
     },
     "compendiumArtMappings": {
       "daggerheart": {
-        "mapping": "modules/daggerheart-art-pack/core-mapping.json"
+        "mapping": "modules/daggerheart-art-pack/storage/core-mapping.json"
       }
     }
   },

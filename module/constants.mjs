@@ -16,6 +16,11 @@ const CONSTANTS = Object.freeze({
     "adversaries",
     "environments",
   ],
+  STORAGE_PATH: "modules/daggerheart-art-pack/storage",
+  MAPPING_FILE: "core-mapping.json",
+  ART_MAPPING: "artMapping",
+  ART_MAPPING_CONFIG: "artMappingConfig",
+  HAS_MAPPING: "hasMapping",
 });
 
 export default CONSTANTS;

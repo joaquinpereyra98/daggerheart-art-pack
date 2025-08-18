@@ -1,5 +1,5 @@
 import CONSTANTS from "./constants.mjs";
-import { getValidExtensions, matchSlug } from "./utils.mjs";
+
 /**
  * @import {DHCompendiumArtMapping} from "./_types.mjs"
  */
@@ -46,74 +46,9 @@ export default function patchPackCompendiumArt() {
  * @this foundry.helpers.media.CompendiumArt
  */
 async function handleModuleArt(mappingPath, credit) {
-  const newMapping = {};
-  const FP = foundry.applications.apps.FilePicker.implementation;
+  if (!game.settings.get(CONSTANTS.MODULE_ID, CONSTANTS.HAS_MAPPING)) return;
   const json = await foundry.utils.fetchJsonWithTimeout(mappingPath);
-
-  const allPacks = [
-    ...CONSTANTS.ITEM_PACKS.map(name => ({ name, type: "item" })),
-    ...CONSTANTS.ACTOR_PACKS.map(name => ({ name, type: "actor" }))
-  ];
-
-  for (const { name: packName, type } of allPacks) {
-    const packKey = `daggerheart.${packName}`;
-    const map = json[packKey];
-    if (!map) continue;
-
-    /**@type {string[]} */
-    const portraits = (await FP.browse(
-      "data",
-      `modules/${CONSTANTS.MODULE_ID}/storage/assets/portraits/${packName}`,
-      { extensions: getValidExtensions() }
-    )).files;
-
-    /**@type {string[]} */
-    const tokens = (type === "actor")
-      ? (await FP.browse(
-        "data",
-        `modules/${CONSTANTS.MODULE_ID}/storage/assets/tokens/${packName}`,
-        { extensions: getValidExtensions() }
-      )).files
-      : [];
-
-    if (!portraits.length && !tokens.length) continue;
-
-    for (const [id, info] of Object.entries(map)) {
-      const fileName = info["__DOCUMENT_NAME__"].slugify({ lowercase: true, replacement: "_" });
-      const docData = {};
-
-      if (type === "item" && portraits.some(file => matchSlug(fileName, file))) {
-        docData.item = portraits[0];
-      }
-
-      if (type === "actor") {
-        if (portraits.some(file => matchSlug(fileName, file))) {
-          docData.actor = portraits[0];
-        }
-        const matchedTokens = tokens.filter(file => matchSlug(fileName, file));
-        if (matchedTokens.length) {
-          const isWildcard = matchedTokens.length !== 1;
-          docData.token = {
-            randomImg: isWildcard,
-            texture: {
-              src: isWildcard
-                ? `modules/${CONSTANTS.MODULE_ID}/storage/assets/tokens/${packName}/${fileName}*`
-                : matchedTokens[0]
-            }
-          };
-        }
-
-      }
-
-      if (Object.keys(docData).length) {
-        newMapping[packKey] = { ...newMapping[packKey], [id]: docData };
-        console.log(fileName, docData.token.randomImg)
-      }
-    }
-  }
-
-  console.log(newMapping);
-  await parseArtMapping.call(this, CONSTANTS.MODULE_ID, newMapping, credit);
+  await parseArtMapping.call(this, CONSTANTS.MODULE_ID, json, credit);
 }
 
 

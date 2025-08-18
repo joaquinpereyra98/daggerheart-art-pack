@@ -45,15 +45,14 @@ jobs:
 
       - name: Create System Archive
         run: |
-          npm run reset-storage --if-present
           zip --recurse-paths ./module.zip \
               module.json \
               README.md \
               LICENSE \
               daggerheart-art-pack.mjs \
+              daggerheart-art-pack.css \
               core-mapping.json \
               templates/ \
-              storage \
 
       - name: Update Release With Files
         id: create_version_release
