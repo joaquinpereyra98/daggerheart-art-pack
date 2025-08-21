@@ -50,7 +50,7 @@ jobs:
               README.md \
               LICENSE \
               daggerheart-art-pack.mjs \
-              daggerheart-art-pack.css \
+              styles/daggerheart-art-pack.css \
               core-mapping.json \
               templates/ \
 
