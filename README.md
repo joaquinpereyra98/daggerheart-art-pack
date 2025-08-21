@@ -2,6 +2,17 @@
 Daggerheart Art Pack is a module designed to simplify the implementation of Art Compendiums for the Daggerheart System FoundryVTT Implementation, developed by the Daggerborne team.
 With this module, you can customize the images for actors and items in the system’s compendiums.
 
+## Installation
+
+To install this module in FoundryVTT, follow these steps:
+1. Open FoundryVTT and go to Configuration and Setup.
+2. Select Add-on Modules Tab.
+3. Click the Install Module button.
+4. In the Manifest URL field, paste the following link:
+```
+https://github.com/joaquinpereyra98/daggerheart-art-pack/releases/latest/download/module.json
+```
+
 ## How use it
 To use this module, simply go to Configure Settings and scroll down to the "daggerheart-art-pack" section. There, you’ll find a single button called Art Mapping Config, which opens the window to set up the Compendium Art for documents within the compendiums.
 
@@ -71,4 +82,5 @@ You can change the size of the token, but adjusting the border isn’t possible 
 - The Daggerborne team or the developer not are responsible for copyright infringement from user-added content.
 - Foundry Virtual Tabletop © Copyright 2023, [Foundry Gaming](https://foundryvtt.com/), LLC. All rights reserved.
 - Daggerheart ©  Critical Role LLC All rights reserved For more information please visit [DarrigtonPress Offical Website](https://darringtonpress.com/license/)
+
 
