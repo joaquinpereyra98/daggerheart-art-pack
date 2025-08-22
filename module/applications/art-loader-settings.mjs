@@ -35,8 +35,7 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
   static PARTS = {
     form: {
       template: `modules/${CONSTANTS.MODULE_ID}/templates/mapping-config.hbs`,
-      scrollable: [".scroll"],
-      classList: ["scroll"]
+      scrollable: [""],
     },
     footer: {
       template: "templates/generic/form-footer.hbs"
@@ -115,7 +114,6 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
     return {
       setting: this.#setting,
       lists: this._prepareLists(),
-      tokenFields: new foundry.data.TextureData({}, { initial: { tint: '', fit: null }, wildcard: true }).fields,
       buttons: [
         { type: "reset", label: "Reset", icon: "fa-solid fa-arrow-rotate-left", action: "reset" },
         { type: "button", label: "Import Art", icon: "fa-solid fa-upload", action: "importArt" },
