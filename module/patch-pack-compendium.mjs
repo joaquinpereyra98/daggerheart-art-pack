@@ -9,8 +9,8 @@ export default function patchPackCompendium() {
 
   const _getIndex = proto.getIndex;
 
-  proto.getIndex = function ({ fields = [] } = {}) {
-    const index = _getIndex.call(this, { fields });
+  proto.getIndex = async function ({ fields = [] } = {}) {
+    const index = await _getIndex.call(this, { fields });
 
     const restoreArt = this.documentName === "Item";
     for (const i of index) {
