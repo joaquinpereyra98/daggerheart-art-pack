@@ -6,6 +6,7 @@ const { SchemaField, FilePathField, TypedObjectField, NumberField, BooleanField 
 
 /**
  * @import {ApplicationClickAction} from "@client/applications/_types.mjs"
+ * @import FormDataExtended from "@client/applications/ux/form-data-extended.mjs"
  */
 
 export default class DHArtMappingConfig extends HandlebarsApplicationMixin(ApplicationV2) {
@@ -199,7 +200,8 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
    * @param {FormDataExtended} formData
    * @returns {Promise<void>}
    */
-  static async _onSubmit(_event, _form, f_ormData) {
+  static async _onSubmit(_event, _form, formData) {
+    foundry.utils.mergeObject(this.#setting, foundry.utils.expandObject(formData.object));
     await game.settings.set(CONSTANTS.MODULE_ID, CONSTANTS.ART_MAPPING, this.#setting);
   }
 
@@ -265,7 +267,7 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
           }
         }
 
-        foundry.utils.mergeObject(this.#setting, newData,);
+        foundry.utils.mergeObject(this.#setting, newData);
         this.render();
       }
     }).browse();
