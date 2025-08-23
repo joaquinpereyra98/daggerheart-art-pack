@@ -221,9 +221,8 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
         for (const key of ["scale", "mirrorX", "mirrorY"]) delete d.token[key];
       }
     }
-    foundry.utils.mergeObject(this.#setting, formDataExpanded);
 
-
+    foundry.utils.mergeObject(this.#setting, DHArtMappingConfig.schema.clean(formDataExpanded));
     await game.settings.set(CONSTANTS.MODULE_ID, CONSTANTS.ART_MAPPING, this.#setting);
   }
 
@@ -293,7 +292,8 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
             }
           }
 
-          foundry.utils.mergeObject(this.#setting, newData);
+          
+          foundry.utils.mergeObject(this.#setting, DHArtMappingConfig.schema.clean(newData));
           this.render();
         }
     }).browse();
