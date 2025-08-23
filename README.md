@@ -33,17 +33,19 @@ At the bottom of the window, there are three main buttons:
 The second button, Import Art, allows the user to select a folder containing artwork and automatically maps each piece to its corresponding document.
 
 ### Naming Your Files
-For the module to recognize your images, the file names must follow a slugified version of the document name:
-- Use lowercase letters.
-- Replace spaces with underscores _.
-- The file name should start with the document name.
+For the module to recognize your images, the file names must **start** with a slugified version of the document name. The module supports multiple naming styles, so you can choose the one you prefer:
+- kebab-case → `acid-burrower.png`
+- snake_case → `acid_burrower.png`
+- CamelCase / TitleCase → `AcidBurrower.png`
+- normalized (no separators) → `acidburrower.png`
   
 #### Example
 If you want to replace the portrait or token of the actor *Acid Burrower*, your files could be:
 ```
-acid_burrower_token.png
+acid-burrower_token.png
 acid_burrower_tk.png
-acid_burrowerCircle.png
+AcidBurrowerCircle.png
+acidburrowerPortrait.png
 ```
 These will all be recognized and can populate the compendium automatically.
 
