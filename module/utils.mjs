@@ -1,15 +1,53 @@
 /**
- * Check if a slug matches the filename (without extension)
- * @param {string} slug - the slug to match
- * @param {string} filePath - the file path to test
+ * Check if a file path matches a given name by comparing common slug variations.
+ * @param {string} name
+ * @param {string} filePath
  * @returns {boolean}
  */
-export function matchSlug(slug, filePath) {
-  // Extract the basename without extension
-  const fileName = filePath.replace(/^.*[\\/]/, "").replace(/\.[^/.]+$/, "");
+export function matchSlug(name, filePath) {
+  const slugOpts = { lowercase: true, strict: true };
 
-  const slice = fileName.slice(0, slug.length)
-  return slice === slug;
+  const variations = [
+    name.slugify({ ...slugOpts, replacement: "-" }), // kebab-case
+    name.slugify({ ...slugOpts, replacement: "_" }), // snake_case
+    name.titleCase(),                                // camelCase
+    name.slugify({ ...slugOpts, replacement: "" })   // normalized
+  ];
+
+  // Get basename without extension and decode URI safely
+  const fileName = decodeURIComponent(filePath.split(/[\\/]/).pop().replace(/\.[^.]+$/, "")).toLowerCase();
+
+  return variations.some(v => fileName.startsWith(v));
+}
+
+/**
+ * Build a wildcard path for FoundryVTT given multiple matching file paths.
+ * @param {string[]} files - Array of matching file paths.
+ * @returns {string} A wildcard-compatible path.
+ */
+export function getWildCardPath(files) {
+
+  const bases = files.map(f =>
+    decodeURI(f.replace(/^.*[\\/]/, "")).replace(/\.[^/.]+$/, "")
+  );
+
+  // Find longest common prefix
+  let prefix = bases[0];
+  for (const b of bases.slice(1)) {
+    let i = 0;
+    while (i < prefix.length && i < b.length && prefix[i] === b[i]) i++;
+    prefix = prefix.slice(0, i);
+    if (!prefix) break;
+  }
+
+  
+  if (prefix) {
+    const pattern = `${prefix}*`
+    const dir = files[0].replace(/[^\\/]*$/, "");
+    return `${dir}${pattern}`;
+  } else {
+    return files[0];
+  }
 }
 
 /**

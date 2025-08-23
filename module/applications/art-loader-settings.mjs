@@ -1,5 +1,5 @@
 import CONSTANTS from "../constants.mjs";
-import { getValidExtensions, matchSlug } from "../utils.mjs";
+import { getValidExtensions, getWildCardPath, matchSlug } from "../utils.mjs";
 
 const { HandlebarsApplicationMixin, ApplicationV2 } = foundry.applications.api;
 const { SchemaField, FilePathField, TypedObjectField, NumberField, BooleanField } = foundry.data.fields;
@@ -128,6 +128,16 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
    */
   _prepareLists() {
     // Helper to build list data for a given set of packs
+
+    const prepateSetting = (source) => {
+      if (!source.token) return source;
+      const token = {
+        scale: Math.abs(source.token.texture.scaleX),
+        mirrorX: source.token.texture.scaleX < 0,
+        mirrorY: source.token.texture.scaleY < 0,
+      };
+      return foundry.utils.mergeObject(source, { token }, { inplace: false });
+    }
     /**
      * 
      * @param {string[]} packs 
@@ -144,7 +154,7 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
           .filter(({ _id }) => keysOnSetting.includes(_id))
           .map((index) => ({
             ...index,
-            ...setting[index._id],
+            ...prepateSetting(setting[index._id]),
             path: `${docCls.collectionName}.${key}.${index._id}`,
           }))
           .sort((a, b) => a.name.localeCompare(b.name));
@@ -199,7 +209,21 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
    * @returns {Promise<void>}
    */
   static async _onSubmit(_event, _form, formData) {
-    foundry.utils.mergeObject(this.#setting, foundry.utils.expandObject(formData.object));
+    const formDataExpanded = foundry.utils.expandObject(formData.object);
+
+    for (const pack of Object.values(formDataExpanded?.actors)) {
+      for (const d of Object.values(pack)) {   
+        if (!d.token) continue;
+        if (typeof d.token.scale === "number") {
+          d.token.texture.scaleX = d.token.scale * (d.token.mirrorX ? -1 : 1);
+          d.token.texture.scaleY = d.token.scale * (d.token.mirrorY ? -1 : 1);
+        }
+        for (const key of ["scale", "mirrorX", "mirrorY"]) delete d.token[key];
+      }
+    }
+    foundry.utils.mergeObject(this.#setting, formDataExpanded);
+
+
     await game.settings.set(CONSTANTS.MODULE_ID, CONSTANTS.ART_MAPPING, this.#setting);
   }
 
@@ -240,34 +264,38 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
     const FP = foundry.applications.apps.FilePicker.implementation;
     await new FP({
       type: "folder",
-      callback: async (target, { activeSource }) => {
-        const files = (await FP.browse(activeSource, target, { extensions: getValidExtensions() })).files;
-        const newData = { actors: {}, items: {} };
+      callback:
+        /**
+         * @param {string} target 
+         * @param {foundry.applications.apps.FilePicker} object 
+         */
+        async (target, { activeSource, source }) => {
+          const files = (await FP.browse(activeSource, target, { extensions: getValidExtensions(), bucket: source.bucket })).files;
+          const newData = { actors: {}, items: {} };
 
-        for (const name of packs) {
-          const { index, documentClass } = game.packs.get(`daggerheart.${name}`);
-          const collection = newData[documentClass.collectionName];
+          for (const name of packs) {
+            const { index, documentClass } = game.packs.get(`daggerheart.${name}`);
+            const collection = newData[documentClass.collectionName];
 
-          for (const i of index) {
-            const slug = i.name.slugify({ lowercase: true, replacement: "_" });
-            const matching = files.filter(path => matchSlug(slug, path));
-            if (!matching.length) continue;
+            for (const i of index) {
+              const matching = files.filter(path => matchSlug(i.name, path));
+              if (!matching.length) continue;
 
-            const randomImg = matching.length > 1 && settingToken;
-            const filePath = randomImg ? `${target}/${slug}*` : matching[0];
+              const randomImg = matching.length > 1 && settingToken;
+              const filePath = randomImg ? getWildCardPath(matching) : matching[0];
 
-            collection[name] ??= {};
-            const data = settingToken
-              ? {token: { randomImg, texture: { src: filePath } }}
-              : { portrait: filePath };
+              collection[name] ??= {};
+              const data = settingToken
+                ? { token: { randomImg, texture: { src: filePath } } }
+                : { portrait: filePath };
 
-            foundry.utils.setProperty(collection[name], i._id, data);
+              foundry.utils.setProperty(collection[name], i._id, data);
+            }
           }
-        }
 
-        foundry.utils.mergeObject(this.#setting, newData);
-        this.render();
-      }
+          foundry.utils.mergeObject(this.#setting, newData);
+          this.render();
+        }
     }).browse();
   }
 

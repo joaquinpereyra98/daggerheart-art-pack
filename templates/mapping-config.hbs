@@ -71,6 +71,27 @@
                         <input type="checkbox" name="{{doc.path}}.token.randomImg" {{checked doc.token.randomImg}}>
                       </div>
                     </div>
+                    <div class="form-group">
+                      <label>{{localize "Scale"}} <span class="units">({{localize
+                          "Ratio"}})</span></label>
+                      <div class="form-fields">
+                        <range-picker name="{{doc.path}}.token.scale" value={{doc.token.scale}} min="0.2"
+                          max="3" step="0.05"></range-picker>
+                      </div>
+                    </div>
+                    <div class="form-group slim">
+                      <label>{{localize "TOKEN.Mirror"}}</label>
+                      <div class="form-fields">
+                        <label class="checkbox">
+                          {{localize "TOKEN.MirrorX"}}
+                          <input type="checkbox" name="{{doc.path}}.token.mirrorX" {{checked doc.token.mirrorX}}>
+                        </label>
+                        <label class="checkbox">
+                          {{localize "TOKEN.MirrorY"}}
+                          <input type="checkbox"name="{{doc.path}}.token.mirrorY" {{checked doc.token.mirrorY}}>
+                        </label>
+                      </div>
+                    </div>
                   </fieldset>
                   {{/if}}
                 </div>
