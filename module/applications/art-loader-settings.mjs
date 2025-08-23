@@ -211,7 +211,7 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
   static async _onSubmit(_event, _form, formData) {
     const formDataExpanded = foundry.utils.expandObject(formData.object);
 
-    for (const pack of Object.values(formDataExpanded?.actors)) {
+    for (const pack of Object.values(formDataExpanded?.actors ?? {})) {
       for (const d of Object.values(pack)) {   
         if (!d.token) continue;
         if (typeof d.token.scale === "number") {
