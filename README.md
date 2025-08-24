@@ -20,7 +20,7 @@ To use this module, simply go to Configure Settings and scroll down to the "dagg
 
 The interface is divided into two main categories:
 - Actors: That includes the Adversaries and Environments compenidums.
--Items: Includes the Ancestries, Armors, Beastforms, Classes, Communities, Consumables, Domains, Loot, Subclasses, and Weapons compendiums.
+- Items: Includes the Ancestries, Armors, Beastforms, Classes, Communities, Consumables, Domains, Loot, Subclasses, and Weapons compendiums.
 
 Each category includes a field that allows you to manually load a new item from the compendium, configure it manually.
 
@@ -50,14 +50,11 @@ acidburrowerPortrait.png
 These will all be recognized and can populate the compendium automatically.
 
 ## FAQ
-**Q: Do I need to create the subfolders myself?**
-A: No. The portraits and tokens folders already include subfolders for each compendium. Simply place your images in the appropriate subfolder.
-
-**Q: The subfolders don't exist, can I create them myself?**
-A: Yes, but you must be especially careful when creating the names of folders and subfolders.
+**Q: I found a bug, who do I tell?**
+A: You can write an issue in the [repository](https://github.com/joaquinpereyra98/daggerheart-art-pack/issues) or send a message to the developer on Discord 
 
 **Q: How should I name my image files?**
-A: Use a slugified version of the document name: lowercase letters, spaces replaced with underscores _. You can add numbers or extra text after the name if you want variations for **Tokens**.
+A: Use a slugified version of the document name. You can add numbers or extra text after the name if you want variations for *Wildscards Tokens*.
 Example:
 ```
 acid_burrower.png
@@ -72,7 +69,7 @@ A: No. Variations (wildcards) are only supported for tokens, not portraits.
 
 **Q: What if my image doesn’t appear in the compendium?**
 A: Make sure:
-- The file is placed in the correct subfolder for the compendium.
+- The file is placed in the correct folder for the compendium.
 - The filename follows the slugified naming rules.
 - The image format is supported by FoundryVTT.
 
@@ -84,5 +81,3 @@ You can change the size of the token, but adjusting the border isn’t possible 
 - The Daggerborne team or the developer not are responsible for copyright infringement from user-added content.
 - Foundry Virtual Tabletop © Copyright 2023, [Foundry Gaming](https://foundryvtt.com/), LLC. All rights reserved.
 - Daggerheart ©  Critical Role LLC All rights reserved For more information please visit [DarrigtonPress Offical Website](https://darringtonpress.com/license/)
-
-
