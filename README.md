@@ -37,7 +37,6 @@ For the module to recognize your images, the file names must **start** with a sl
 - kebab-case → `acid-burrower.png`
 - snake_case → `acid_burrower.png`
 - CamelCase / TitleCase → `AcidBurrower.png`
-- normalized (no separators) → `acidburrower.png`
   
 #### Example
 If you want to replace the portrait or token of the actor *Acid Burrower*, your files could be:

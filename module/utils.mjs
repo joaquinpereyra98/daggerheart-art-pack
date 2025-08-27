@@ -11,7 +11,6 @@ export function matchSlug(name, filePath) {
     name.slugify({ ...slugOpts, replacement: "-" }), // kebab-case
     name.slugify({ ...slugOpts, replacement: "_" }), // snake_case
     name.titleCase(),                                // camelCase
-    name.slugify({ ...slugOpts, replacement: "" })   // normalized
   ];
 
   // Get basename without extension and decode URI safely
