@@ -82,7 +82,7 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
 
   /**
  * The current setting value
- * @type {GameUIConfiguration}
+ * @type {DHArtMappingConfig.schema}
  */
   #setting;
 
@@ -212,7 +212,7 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
     const formDataExpanded = foundry.utils.expandObject(formData.object);
 
     for (const pack of Object.values(formDataExpanded?.actors ?? {})) {
-      for (const d of Object.values(pack)) {   
+      for (const d of Object.values(pack)) {
         if (!d.token) continue;
         if (typeof d.token.scale === "number") {
           d.token.texture.scaleX = d.token.scale * (d.token.mirrorX ? -1 : 1);
@@ -270,30 +270,35 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
          */
         async (target, { activeSource, source }) => {
           const files = (await FP.browse(activeSource, target, { extensions: getValidExtensions(), bucket: source.bucket })).files;
-          const newData = { actors: {}, items: {} };
+          const newData = foundry.utils.duplicate(this.#setting)
 
           for (const name of packs) {
             const { index, documentClass } = game.packs.get(`daggerheart.${name}`);
-            const collection = newData[documentClass.collectionName];
+            const basePath = [documentClass.collectionName, name];
 
             for (const i of index) {
               const matching = files.filter(path => matchSlug(i.name, path));
               if (!matching.length) continue;
 
+              const path = [...basePath, i._id];
+
               const randomImg = matching.length > 1 && settingToken;
               const filePath = randomImg ? getWildCardPath(matching) : matching[0];
 
-              collection[name] ??= {};
-              const data = settingToken
-                ? { token: { randomImg, texture: { src: filePath } } }
-                : { portrait: filePath };
-
-              foundry.utils.setProperty(collection[name], i._id, data);
+              if (!settingToken) {
+                path.push("portrait");
+                foundry.utils.setProperty(newData, path.join("."), filePath);
+              } else {
+                path.push("token");
+                foundry.utils.setProperty(newData, `${path.join(".")}.texture.src`, filePath);
+                foundry.utils.setProperty(newData, `${path.join(".")}.randomImg`, randomImg);
+              }
             }
           }
 
-          
+
           foundry.utils.mergeObject(this.#setting, DHArtMappingConfig.schema.clean(newData));
+          console.log(this.#setting)
           this.render();
         }
     }).browse();

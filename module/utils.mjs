@@ -10,7 +10,8 @@ export function matchSlug(name, filePath) {
   const variations = [
     name.slugify({ ...slugOpts, replacement: "-" }), // kebab-case
     name.slugify({ ...slugOpts, replacement: "_" }), // snake_case
-    name.titleCase(),                                // camelCase
+    name.titleCase(),                                // Title Case
+    name.charAt(0).toLowerCase() + name.titleCase().slice(1), // camelCase
   ];
 
   // Get basename without extension and decode URI safely
@@ -39,7 +40,7 @@ export function getWildCardPath(files) {
     if (!prefix) break;
   }
 
-  
+
   if (prefix) {
     const pattern = `${prefix}*`
     const dir = files[0].replace(/[^\\/]*$/, "");
