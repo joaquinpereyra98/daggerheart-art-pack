@@ -298,7 +298,6 @@ export default class DHArtMappingConfig extends HandlebarsApplicationMixin(Appli
 
 
           foundry.utils.mergeObject(this.#setting, DHArtMappingConfig.schema.clean(newData));
-          console.log(this.#setting)
           this.render();
         }
     }).browse();
